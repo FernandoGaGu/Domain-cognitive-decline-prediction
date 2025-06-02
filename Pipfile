@@ -1,0 +1,31 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://download.pytorch.org/whl/cu124/"
+verify_ssl = true
+name = "pytorch"
+
+[packages]
+ipython = "*"
+torch = "2.5.1"
+numpy = "2.2.2"
+pandas = "*"
+torchvision = "*"
+scikit-learn = "1.6.1"
+torch-geometric = "2.6.1"
+loguru = "*"
+mlflow = "2.19.0"
+optuna = "*"
+seaborn = "*"
+torch-summary = "*"
+nilearn = "0.11.1"
+ipykernel = "*"
+
+[dev-packages]
+ipykernel = "*"
+
+[requires]
+python_version = "3.11"
