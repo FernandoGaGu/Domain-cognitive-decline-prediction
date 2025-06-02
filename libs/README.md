@@ -1,1 +1,0 @@
-This directory contains an auxiliary library used for model implementation.
