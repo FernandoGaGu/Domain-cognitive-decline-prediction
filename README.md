@@ -1,6 +1,6 @@
-# <mark>TBD. Add final title</mark>
+# Domain-specific cognitive decline prediction in Alzheimer's disease using multimodal neuroimaging and Artificial Intelligence
 
-Repository with the code associated with research article: <mark>TBD. Add title and link</mark>.
+Repository with the code associated with research article: Domain-specific cognitive decline prediction in Alzheimer's disease using multimodal neuroimaging and Artificial Intelligence <mark>TBD. Add link</mark>.
 
 ## Events
 

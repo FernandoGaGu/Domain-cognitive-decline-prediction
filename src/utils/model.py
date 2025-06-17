@@ -162,7 +162,7 @@ class FusionCatModel(nn.Module):
                 self.heads.append(nn.Sequential(
                     nn.Linear(32, 16),
                     nn.BatchNorm1d(16),
-                    nn.LeakyReLU(),
+                    nn.SiLU(),
                     nn.Linear(16, 1),
                     nn.Sigmoid()
                 ))
@@ -170,7 +170,7 @@ class FusionCatModel(nn.Module):
                 self.heads.append(nn.Sequential(
                     nn.Linear(32, 16),
                     nn.BatchNorm1d(16),
-                    nn.LeakyReLU(),
+                    nn.SiLU(),
                     nn.Linear(16,  multiclass_n_classes[mlt_class_idx]),
                 ))
                 mlt_class_idx += 1
@@ -178,7 +178,7 @@ class FusionCatModel(nn.Module):
                 self.heads.append(nn.Sequential(
                     nn.Linear(32, 16),
                     nn.BatchNorm1d(16),
-                    nn.LeakyReLU(),
+                    nn.SiLU(),
                     nn.Linear(16, 1),
                 ))
             
@@ -265,7 +265,7 @@ class FusionAttentionModel(nn.Module):
                 self.heads.append(nn.Sequential(
                     nn.Linear(32, 16),
                     nn.BatchNorm1d(16),
-                    nn.LeakyReLU(),
+                    nn.SiLU(),
                     nn.Linear(16, 1),
                     nn.Sigmoid()
                 ))
@@ -273,7 +273,7 @@ class FusionAttentionModel(nn.Module):
                 self.heads.append(nn.Sequential(
                     nn.Linear(32, 16),
                     nn.BatchNorm1d(16),
-                    nn.LeakyReLU(),
+                    nn.SiLU(),
                     nn.Linear(16,  multiclass_n_classes[mlt_class_idx]),
                 ))
                 mlt_class_idx += 1
@@ -281,7 +281,7 @@ class FusionAttentionModel(nn.Module):
                 self.heads.append(nn.Sequential(
                     nn.Linear(32, 16),
                     nn.BatchNorm1d(16),
-                    nn.LeakyReLU(),
+                    nn.SiLU(),
                     nn.Linear(16, 1),
                 ))
 
@@ -387,7 +387,7 @@ class FusionAttentionModelV2(nn.Module):
                 self.heads.append(nn.Sequential(
                     nn.Linear(32, 16),
                     nn.BatchNorm1d(16),
-                    nn.LeakyReLU(),
+                    nn.SiLU(),
                     nn.Linear(16, 1),
                     nn.Sigmoid()
                 ))
@@ -395,7 +395,7 @@ class FusionAttentionModelV2(nn.Module):
                 self.heads.append(nn.Sequential(
                     nn.Linear(32, 16),
                     nn.BatchNorm1d(16),
-                    nn.LeakyReLU(),
+                    nn.SiLU(),
                     nn.Linear(16,  multiclass_n_classes[mlt_class_idx]),
                 ))
                 mlt_class_idx += 1
@@ -403,7 +403,7 @@ class FusionAttentionModelV2(nn.Module):
                 self.heads.append(nn.Sequential(
                     nn.Linear(32, 16),
                     nn.BatchNorm1d(16),
-                    nn.LeakyReLU(),
+                    nn.SiLU(),
                     nn.Linear(16, 1),
                 ))
 
@@ -537,7 +537,7 @@ class MultiTaskModel(nn.Module):
                 self.heads.append(nn.Sequential(
                     nn.Linear(32, 16),
                     nn.BatchNorm1d(16),
-                    nn.LeakyReLU(),
+                    nn.SiLU(),
                     nn.Linear(16, 1),
                     nn.Sigmoid()
                 ))
@@ -545,7 +545,7 @@ class MultiTaskModel(nn.Module):
                 self.heads.append(nn.Sequential(
                     nn.Linear(32, 16),
                     nn.BatchNorm1d(16),
-                    nn.LeakyReLU(),
+                    nn.SiLU(),
                     nn.Linear(16,  multiclass_n_classes[mlt_class_idx]),
                 ))
                 mlt_class_idx += 1
@@ -553,7 +553,7 @@ class MultiTaskModel(nn.Module):
                 self.heads.append(nn.Sequential(
                     nn.Linear(32, 16),
                     nn.BatchNorm1d(16),
-                    nn.LeakyReLU(),
+                    nn.SiLU(),
                     nn.Linear(16, 1),
                 ))
 
